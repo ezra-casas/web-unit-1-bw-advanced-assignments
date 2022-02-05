@@ -1,4 +1,58 @@
 /* don't forget to implement a reset */
 
-/* you need to implement styles for your dark and your light theme */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+* {
+margin: 0;
+}
+html, body {
+height: 100%;
+}
+body {
+line-height: 1.5;
+-webkit-font-smoothing: antialiased;
+}
+img, picture, video, canvas, svg {
+display: block;
+max-width: 100%;
+}
+input, button, textarea, select {
+font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+overflow-wrap: break-word;
+}
+#root, #__next {
+isolation: isolate;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* DARK MODE: */
+#mainSection{
+    background-color: lightcoral;
+    width: 50%;
+    height: 50%;
+    border: 3px solid lightcoral;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+}
+button{
+    border-radius: 20px;
+    border: none;
+    width: 12vw;
+    height: 5vw;
+}
+button:hover{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
 /* which will be the default? up to you */
